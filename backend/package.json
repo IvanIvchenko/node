@@ -1,0 +1,25 @@
+{
+  "name": "package1",
+  "version": "1.0.0",
+  "description": "As requested",
+  "main": "js1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanIvchenko/node.git"
+  },
+  "keywords": [
+    "1"
+  ],
+  "author": "IvanIvchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanIvchenko/node/issues"
+  },
+  "homepage": "https://github.com/IvanIvchenko/node#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
