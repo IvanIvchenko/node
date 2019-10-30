@@ -7,5 +7,3 @@ ReactDOM.render(
   <Form />,
   document.getElementById('app')
 );
-
-module.hot.accept();

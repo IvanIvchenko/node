@@ -1,2 +1,4 @@
-node_modules/
-/package-lock.json/
+web/node_modules/
+backend/node_modules/
+web/package-lock.json
+backend/package-lock.json
