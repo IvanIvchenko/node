@@ -1,7 +1,10 @@
 const webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-  entry: './web/index.js' ,
+  entry:{
+   path: __dirname + '/index.js'
+  } ,
   module: {
     rules: [
       {
@@ -15,15 +18,20 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/web',
+    path: __dirname + '/',
     publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
+
   devServer: {
-    contentBase: './web',
-    hot: true
+    port: 8080,
+    contentBase: __dirname + '../',
+    hot: true,
+    proxy:{
+       "/":"http://localhost:3000"
+    }
   }
 };

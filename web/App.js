@@ -24,11 +24,13 @@ export class Form extends React.Component {
   handleSubmit(event) {
 
     axios
-    .post('http://localhost:3000/', {
+    .post('/', {
 	    	name: this.state.name,
         email: this.state.email,
         value: this.state.value,
     })
+
+    
     
   };
 
